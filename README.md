@@ -1,2 +1,2 @@
-# MOVA_F1_FollowLine
-Memoria de la práctica "Follow line" para la asignatura de Visión Robótica del Máster en Visión Artificial de la URJC
+# MOVA Visión Robótica
+Aquí iré subiendo las memorias de las prácticas de la asignatura de Visión Robótica del Máster en Visión Artificial
