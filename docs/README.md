@@ -4,7 +4,7 @@
 
 <p>En esta práctica se pretende realizar un algoritmo que sea capaz de que un coche de Fórmula 1 simulado siga una línea dibujada sobre un circuito. Esta línea es de color rojo y está en el centro de la pista. En esta práctica se pondrá en uso técnicas de procesado de imagen para encontrar la línea así como técnicas de controladores PID.</p>
 
-<p><img src="https://github.com/sergiodomin/MOVA-Vision-Robotica-FollowLine/blob/master/src/Follow_line/circuito.png" alt="Foto Circuito" /></p>
+<p><img src="https://github.com/sergiodomin/MOVA-Vision-Robotica-FollowLine/blob/master/docs/src/Follow_line/circuito.png" alt="Foto Circuito" /></p>
 
 <p><strong>Detección de la línea roja</strong></p>
 
@@ -73,4 +73,4 @@ return giro, giro_kpg, giro_kdg
 
 <p>Por último mostramos un vídeo en el cual se muestra una vuelta completa al circuito con el último método explicado:</p>
 
-<p><img src="https://github.com/sergiodomin/MOVA-Vision-Robotica-FollowLine/blob/master/src/Follow_line/F1_v4.gif" alt="Vídeo vuelta completa" /></p>
+<p><img src="https://github.com/sergiodomin/MOVA-Vision-Robotica-FollowLine/blob/master/docs/src/Follow_line/F1_v4.gif" alt="Vídeo vuelta completa" /></p>
