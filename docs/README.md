@@ -39,7 +39,7 @@
 
 <li>Un vez que sabemos que no estamos fuera de línea calculamos tres puntos, estos puntos hemos probado con diferentes opciones: usando sólo el punto más alto, probando puntos puestos a mano y lo último que hemos probado y que mejor rendimiento nos ha dado es lo siguiente.
 Primero buscamos el punto más alto en el que hay línea, posteriormente buscamos el punto más bajo donde hay línea. Con estos dos puntos <em>calculamos un punto intermedio por el cual nos guiaremos posteriormente para calcular el error</em>. Para afinar este punto intermedio hemos probado diferentes valores. Para empezar, para este caso, probamos a usar el punto medio entre el punto más alto y el punto más bajo, esto nos iba bien pero era demasiado brusco en algunos puntos. Fuímos subiendo el punto intermedio hasta que nos quedamos con un punto bastante alto pero no tan alto como en el caso que hemos explicado anteriormente. Por lo que finalmente el punto intermedio por el cual nos guiamos para calcular la diferencia de error es el siguiente:
-<code>row_p_medium = int(((row_p_bottom-row_p_up)/15)+row_p_up)</code></li>
+<code>row_p_medium = int(((row_p_bottom-row_p_up)/25)+row_p_up)</code></li>
 
 <li>Cuando los puntos están bastante alineados, es decir, están los tres en un rango de 40 píxeles respecto del centro de la imagen, decidimos que estamos en 'modo recta' en este caso a nuestro controlador PD de velocidad de pasamos unos valores que permiten llegar a una velocidad más alta y sin embargo al controlador PD que controla el giro le pasamos unos valores para que gire muy poco(si estamos centrados, ¿para qué vamos a girar mucho?). </li>
 
@@ -73,4 +73,6 @@ return giro, giro_kpg, giro_kdg
 
 <p>Por último mostramos un vídeo en el cual se muestra una vuelta completa al circuito con el último método explicado:</p>
 
-<p><img src="https://github.com/sergiodomin/MOVA-Vision-Robotica-FollowLine/blob/master/docs/src/Follow_line/F1_v5.gif?raw=true" alt="Vídeo vuelta completa" /></p>
+<p><img src="https://github.com/sergiodomin/MOVA-Vision-Robotica-FollowLine/blob/master/docs/src/Follow_line/F1_v6.gif?raw=true" alt="Vídeo vuelta completa" /></p>
+
+<p> En la carpeta <a href="https://github.com/sergiodomin/MOVA-Vision-Robotica-FollowLine/tree/master/docs/src/Follow_line"> GIF's Follow Line</a> se pueden ver el resto de versiones probadas.
