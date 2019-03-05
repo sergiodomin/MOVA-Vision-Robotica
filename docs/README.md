@@ -73,6 +73,6 @@ return giro, giro_kpg, giro_kdg
 
 <p>Por último mostramos un vídeo en el cual se muestra una vuelta completa al circuito con el último método explicado:</p>
 
-<p><img src="https://github.com/sergiodomin/MOVA-Vision-Robotica-FollowLine/blob/master/docs/src/Follow_line/F1_v6.gif?raw=true" alt="Vídeo vuelta completa" /></p>
+<p><img src="https://github.com/sergiodomin/MOVA-Vision-Robotica-FollowLine/blob/master/docs/src/Follow_line/F1_v7.gif?raw=true" alt="Vídeo vuelta completa" /></p>
 
 <p> En la carpeta <a href="https://github.com/sergiodomin/MOVA-Vision-Robotica-FollowLine/tree/master/docs/src/Follow_line"> GIF's Follow Line</a> se pueden ver el resto de versiones probadas.
