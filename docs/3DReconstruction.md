@@ -12,8 +12,8 @@
 <p><strong>Preprocesado de la imagen derecha de nuestro par estéreo</strong></p>
 <p>En esta cámara, lo que queremos es poder encontrar aquellos puntos que hemos seleccionado en la otra cámara. Por ello también realizamos el filtrado Canny y posteriormente una dilatación. En este caso la dilatación que aplicamos en esta imagen es mayor que en la imagen izquierda. La razón de que apliquemos una dilatación mayor es debido a que queremos tener un mayor abanico de posibilidades alrededor de los puntos característicos para así asegurarnos de encontrar una correspondencia buena. Es decir, buscamos en los puntos característicos y en sus vecinos.</p>
 
-<p><img src="https://raw.githubusercontent.com/sergiodomin/MOVA-Vision-Robotica-FollowLine/master/docs/src/3D_Reconstruction/imgCL.png" alt="Foto Canny Izquierda" />
-<img src="https://raw.githubusercontent.com/sergiodomin/MOVA-Vision-Robotica-FollowLine/master/docs/src/3D_Reconstruction/imgCR.png" alt="Foto Canny Derecha" /></p>
+<p><center><img src="https://raw.githubusercontent.com/sergiodomin/MOVA-Vision-Robotica-FollowLine/master/docs/src/3D_Reconstruction/imgCL.png" alt="Foto Canny Izquierda" />
+<img src="https://raw.githubusercontent.com/sergiodomin/MOVA-Vision-Robotica-FollowLine/master/docs/src/3D_Reconstruction/imgCR.png" alt="Foto Canny Derecha" /></center></p>
 
 
 <p><strong>Restricción de la línea epipolar</strong></p>
