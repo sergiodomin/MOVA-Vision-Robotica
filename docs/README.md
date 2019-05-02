@@ -4,7 +4,7 @@
 
 <p><strong>Prácticas realizadas: </strong></p>
 [Follow Line](FollowLine.md)
-<p><img src="https://raw.githubusercontent.com/sergiodomin/MOVA-Vision-Robotica-FollowLine/master/docs/src/Follow_line/circuito.png" alt="Foto Circuito" /></p>
+<p><img src="https://raw.githubusercontent.com/sergiodomin/MOVA-Vision-Robotica-FollowLine/master/docs/src/Follow_line/F1.png" alt="Foto F1" /></p>
 [3D Reconstruction](3DReconstruction.md)
 <p><img src="https://raw.githubusercontent.com/sergiodomin/MOVA-Vision-Robotica-FollowLine/master/docs/src/3D_Reconstruction/3d.png" alt="Foto 3D" /></p>
 
