@@ -2,17 +2,19 @@
 [Home](README.md) | [Follow Line](FollowLine.md) | [3D Reconstruction](3DReconstruction.md)
 
 <h1>Práctica 3D Reconstruction</h1>
-<p>En esta práctica se pretende realizar un algoritmo que sea capaz de reconstruir una escena en 3D a partir de lo que se ve en un sistema estéreo canónico compuesto por dos cámaras.</p>
+<p>En esta práctica se pretende realizar un algoritmo que sea capaz de reconstruir una escena en 3D a partir de lo que ve un sistema estéreo canónico compuesto por dos cámaras.</p>
 
 <p><strong>Preprocesado de la imagen izquierda de nuestro par estéreo</strong></p>
-<p>Nuestra cámara izquierda será de la que partamos para seleccionar los puntos característicos que posteriormente queramos encontrar en la otra cámara. Para ello, la imagen de está cámara la pasamos de RGB a escala de grises para posteriormente aplicarle un filtrado Canny.</p>
-<p>Con el filtrado Canny lo que conseguimos es obtener los bordes o contornos de los objetos que queremos reconstruir. Para las versiones iniciales de prueba, este filtrado lo hacíamos bastante agresivo para no obtener demasiados puntos y así poder tracear mejor los errores.</p>
+<p>Nuestra cámara izquierda será de la que partamos para seleccionar los puntos característicos que posteriormente queramos encontrar en la otra cámara. Para ello, la imagen de esta cámara la pasamos de un espacio de color en RGB a escala de grises, para posteriormente aplicarle un filtrado Canny.</p>
+<p>Con el filtrado Canny lo que conseguimos es obtener los bordes, o contornos, de los objetos que queremos reconstruir. Para las versiones iniciales, este filtrado lo hacíamos bastante agresivo para no obtener demasiados puntos y así poder tracear mejor los errores.</p>
 <p>Para la versión final, lo que se ha hecho es un filtrado Canny menos agresivo, con lo que nos hemos quedado con más puntos y posteriormente también se ha hecho una ligera dilatación de los puntos para así tener mayor cantidad de los objetos a reconstruir.</p>
 
 <p><strong>Preprocesado de la imagen derecha de nuestro par estéreo</strong></p>
-<p>En esta cámara, lo que queremos es poder encontrar aquellos puntos que hemos seleccionado en la otra cámara. Por ello también realizamos el filtrado Canny y posteriormente una dilatación, en este caso la dilatación que aplicamos en esta imagen es mayor que en la imagen izquierda. La razón de que apliquemos una dilatación mayor es debido a que queremos tener un mayor abanico de posibilidades alrededor de los puntos característicos para así asegurarnos de encontrar una correspondencia buena. Es decir, buscamos en los puntos característicos y en sus vecinos.</p>
+<p>En esta cámara, lo que queremos es poder encontrar aquellos puntos que hemos seleccionado en la otra cámara. Por ello también realizamos el filtrado Canny y posteriormente una dilatación. En este caso la dilatación que aplicamos en esta imagen es mayor que en la imagen izquierda. La razón de que apliquemos una dilatación mayor es debido a que queremos tener un mayor abanico de posibilidades alrededor de los puntos característicos para así asegurarnos de encontrar una correspondencia buena. Es decir, buscamos en los puntos característicos y en sus vecinos.</p>
 
-<p><img src="https://raw.githubusercontent.com/sergiodomin/MOVA-Vision-Robotica-FollowLine/master/docs/src/Follow_line/circuito.png" alt="Foto Circuito" /></p>
+<p><img src="https://raw.githubusercontent.com/sergiodomin/MOVA-Vision-Robotica-FollowLine/master/docs/src/3D_Reconstruction/imgCL.png" alt="Foto Canny Izquierda" />
+<img src="https://raw.githubusercontent.com/sergiodomin/MOVA-Vision-Robotica-FollowLine/master/docs/src/3D_Reconstruction/imgCR.png" alt="Foto Canny Derecha" /></p>
+
 
 <p><strong>Restricción de la línea epipolar</strong></p>
 <p>Una vez que tenemos las dos imágenes, tenemos que encontrar donde están en la imagen derecha los puntos que hemos seleccionado en la imagen izquierda. Buscar en toda la imagen sería muy costoso, por lo que para agilizar este proceso, lo que se ha hecho es lo que se denomina como "restricción epipolar".</p>
