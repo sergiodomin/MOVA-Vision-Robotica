@@ -65,7 +65,7 @@
 <p align="justify">Una vez obtenido los puntos en 3D, hallamos el color en RGB correspondiente a ese punto y lo pintamos en el plano 3D mediante la siguiente función:</p>
 <p><code>self.drawPoint(p3D/50,pColor)</code></p>
 
-<p align="justify">Por último mostramos unas imágenes donde se ve una reconstrucción completa y un vídeo en el cual se muestra una reconstrucción completa a tiempo real, así como el tiempo empleado, puntos evaluados y putos pintados.</p>
+<p align="justify">Por último mostramos unas imágenes donde se ve una reconstrucción total desde diferentes ángulos y un vídeo en el que se muestra una reconstrucción completa a tiempo real, así como el tiempo empleado, número de puntos evaluados y número de puntos pintados.</p>
 
 <p align="center"><img src="https://raw.githubusercontent.com/sergiodomin/MOVA-Vision-Robotica-FollowLine/master/docs/src/3D_Reconstruction/full_reco.png" alt="Foto Reconstrucción" /><img src="https://raw.githubusercontent.com/sergiodomin/MOVA-Vision-Robotica-FollowLine/master/docs/src/3D_Reconstruction/full_reco_close.png" alt="Foto Reconstrucción de Cerca" />
 <img src="https://raw.githubusercontent.com/sergiodomin/MOVA-Vision-Robotica-FollowLine/master/docs/src/3D_Reconstruction/full_reco_lateral.png" alt="Foto Reconstrucción Lateral" /></p>
@@ -75,3 +75,6 @@
 <p><strong>Vídeo</strong></p>
 <p><img src="https://github.com/sergiodomin/MOVA-Vision-Robotica-FollowLine/blob/master/docs/src/3D_Reconstruction/3D_v2.gif?raw=true" alt="Vídeo reconstrucción completa" /></p>
 
+<p><strong>Conclusiones</strong></p>
+<p align="justify">En esta práctica se ha puesto a prueba el conocimiento de cómo reconstruir una imagen 3D a partir de las imágenes obtenidas de dos cámaras de un sistema canónico estéreo. Hemos evaluado la gran ventaja, en tiempo, que tiene el usar la restricción epipolar, además de las restricciones del filtrado Canny y rango de píxeles propuestas. Por otro lado también se ha investigado el cómo evaluar las correspondencias de una forma eficiente, tanto por el tipo de método a usar, tamaño de ventana y espacio de color.</p>
+<p align="justify">Con la aplicación de todo esto, se ha obtenido una reconstrucción bastante completa de la escena (unos 11.000 puntos dibujados) en un tiempo bastante rápido (en torno a un minuto).</p>
