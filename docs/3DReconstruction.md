@@ -75,7 +75,7 @@
 <p><strong>Vídeo</strong></p>
 <p><img src="https://github.com/sergiodomin/MOVA-Vision-Robotica-FollowLine/blob/master/docs/src/3D_Reconstruction/3D_v2.gif?raw=true" alt="Vídeo reconstrucción completa" /></p>
 
-<p> En el sigiente enlace <a href="https://github.com/sergiodomin/MOVA-Vision-Robotica-FollowLine/blob/master/docs/src/3D_Reconstruction/3D_v2.gif?raw=true"> GIF 3D Reconstruction</a> se puede ver el vídeo más grande.
+<p> En el sigiente enlace <a href="https://github.com/sergiodomin/MOVA-Vision-Robotica-FollowLine/blob/master/docs/src/3D_Reconstruction/3D_v2.gif?raw=true"> GIF 3D Reconstruction</a> se puede descargar el vídeo para verlo en grande.
 
 <p><strong>Conclusiones</strong></p>
 <p align="justify">En esta práctica se ha puesto a prueba el conocimiento de cómo reconstruir una imagen 3D a partir de las imágenes obtenidas de dos cámaras de un sistema canónico estéreo. Hemos evaluado la gran ventaja, en tiempo, que tiene el usar la restricción epipolar, además de las restricciones del filtrado Canny y rango de píxeles propuestas. Por otro lado también se ha investigado el cómo evaluar las correspondencias de una forma eficiente, tanto por el tipo de método a usar, tamaño de ventana y espacio de color.</p>
