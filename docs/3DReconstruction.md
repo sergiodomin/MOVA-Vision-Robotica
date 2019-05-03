@@ -1,6 +1,5 @@
 <hr />
 [Home](README.md) | [Follow Line](FollowLine.md) | [3D Reconstruction](3DReconstruction.md)
-
 <h1>Práctica 3D Reconstruction</h1>
 <p><strong>Introducción</strong></p>
 <p align="justify">En esta práctica se pretende realizar un algoritmo que sea capaz de reconstruir una escena en 3D a partir de lo que ve un sistema estéreo canónico compuesto por dos cámaras.</p>
