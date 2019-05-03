@@ -2,7 +2,6 @@
 [Home](README.md) | [Follow Line](FollowLine.md) | [3D Reconstruction](3DReconstruction.md)
 <h1>Práctica Follow Line</h1>
 <p><strong>Introducción</strong></p>
-[3D Reconstruction](3DReconstruction.md)
 <p>En esta práctica se pretende realizar un algoritmo que sea capaz de que un coche de Fórmula 1 simulado siga una línea dibujada sobre un circuito. Esta línea es de color rojo y está en el centro de la pista. En esta práctica se pondrá en uso técnicas de procesado de imagen para encontrar la línea así como técnicas de controladores PID.</p>
 
 <p><img src="https://raw.githubusercontent.com/sergiodomin/MOVA-Vision-Robotica-FollowLine/master/docs/src/Follow_line/circuito.png" alt="Foto Circuito" /></p>
