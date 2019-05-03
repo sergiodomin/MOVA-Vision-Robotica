@@ -62,13 +62,13 @@
 <p align="justify">Para evitar poder haber obtenido malas correspondencias, rechazamos aquellos puntos que tengan una disparidad muy alta.</p>
 
 <p align="justify">Una vez obtenido los puntos en 3D, hallamos el color en RGB correspondiente a ese punto y lo pintamos en el plano 3D mediante la siguiente función:</p>
-<p><code>self.drawPoint(p3D/50,pColor)</code>ç</p>
+<p><code>self.drawPoint(p3D/50,pColor)</code></p>
 
 <p align="justify">Por último mostramos unas imágenes donde se ve una reconstrucción completa y un vídeo en el cual se muestra una reconstrucción completa a tiempo real, así como el tiempo empleado, puntos evaluados y putos pintados.</p>
 
 <p align="center"><img src="https://raw.githubusercontent.com/sergiodomin/MOVA-Vision-Robotica-FollowLine/master/docs/src/3D_Reconstruction/full_reco.png" alt="Foto Reconstrucción" /><img src="https://raw.githubusercontent.com/sergiodomin/MOVA-Vision-Robotica-FollowLine/master/docs/src/3D_Reconstruction/full_reco_close.png" alt="Foto Reconstrucción de Cerca" />
-<img src="https://raw.githubusercontent.com/sergiodomin/MOVA-Vision-Robotica-FollowLine/master/docs/src/3D_Reconstruction/full_reco_lateral.png" alt="Foto Reconstrucción Lateral" /><img src="https://raw.githubusercontent.com/sergiodomin/MOVA-Vision-Robotica-FollowLine/master/docs/src/3D_Reconstruction/info.png" alt="Foto Información puntos" /></p>
+<img src="https://raw.githubusercontent.com/sergiodomin/MOVA-Vision-Robotica-FollowLine/master/docs/src/3D_Reconstruction/full_reco_lateral.png" alt="Foto Reconstrucción Lateral" /></p>
 <figcaption align="center">Muestra de varias vistas de una reconstrucción</figcaption>
 <p>Vídeo</p>
 <p><img src="https://github.com/sergiodomin/MOVA-Vision-Robotica-FollowLine/blob/master/docs/src/3D_Reconstruction/3D_v2.gif?raw=true" alt="Vídeo reconstrucción completa" /></p>
-<p>Working in progress</p>
+
