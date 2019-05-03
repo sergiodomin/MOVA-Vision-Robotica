@@ -15,14 +15,14 @@
 <p align="center"><img src="https://raw.githubusercontent.com/sergiodomin/MOVA-Vision-Robotica-FollowLine/master/docs/src/3D_Reconstruction/imgCL.png" alt="Foto Canny Izquierda" />
 <img src="https://raw.githubusercontent.com/sergiodomin/MOVA-Vision-Robotica-FollowLine/master/docs/src/3D_Reconstruction/imgCR.png" alt="Foto Canny Derecha" /></p>
 <figcaption align="center">Comparativa entre la imagen izquierda con una dilatacion menor y la imagen derecha con una dilatación mayor</figcaption>
-
+<hr />
 <p><strong>Restricción de la línea epipolar</strong></p>
 <p align="justify">Una vez que tenemos las dos imágenes, tenemos que encontrar donde están en la imagen derecha los puntos que hemos seleccionado en la imagen izquierda. Buscar en toda la imagen sería muy costoso, por lo que para agilizar este proceso, lo que se ha hecho es lo que se denomina como "restricción epipolar".</p>
 <p align="justify">La restricción epipolar dice que la correspondenica de p1 en la imagen 2 se halla en la línea epipolar L21 (la línea epipolar en la imagen 2 asociada a p1). Igual para la línea epipolar de p2 en la imagen 1</p>
 
 <p align="center"><img src="https://raw.githubusercontent.com/sergiodomin/MOVA-Vision-Robotica-FollowLine/master/docs/src/3D_Reconstruction/epipolar_g.png" alt="Foto Diagrama Epipolar" /></p>
 <figcaption align="center">Diagrama línea epipolar</figcaption>
-
+<hr />
 <p align="justify">Para ello, hemos de calcular el rayo que parte de una de las cámaras y atraviesa un punto en el plano imagen de esta misma cámara y proyectar este rayo sobre el plano imagen de la otra cámara.</p>
 <p align="justify">Para calcular el origen de coordenadas de nuestra cámara izquierda usamos la siguiente función:</p>
 <p><code>origLeft = self.camLeftP.getCameraPosition()</code></p>
@@ -44,8 +44,9 @@
 <p align="center"><img src="https://raw.githubusercontent.com/sergiodomin/MOVA-Vision-Robotica-FollowLine/master/docs/src/3D_Reconstruction/epipolar.png" alt="Foto Epipolar 1" /><img src="https://raw.githubusercontent.com/sergiodomin/MOVA-Vision-Robotica-FollowLine/master/docs/src/3D_Reconstruction/epipolar_2.png" alt="Foto Epipolar 2" />
 <img src="https://raw.githubusercontent.com/sergiodomin/MOVA-Vision-Robotica-FollowLine/master/docs/src/3D_Reconstruction/epipolar_3.png" alt="Foto Epipolar 3" /></p>
 <figcaption align="center">Muestra de varios puntos de interés sobre la línea epipolar tras aplicar las diferentes máscaras</figcaption>
-<p><strong>Matching</strong></p>
+<hr />
 
+<p><strong>Matching</strong></p>
 <p align="justify">Una vez que tenemos localizados en qué puntos queremos buscar la correspondencia, tenemos que aplicar un algorítmo que nos indique si estos dos puntos son los mismos o no. Para ello pasamos las imágenes a HSV y optamos por quedarnos únicamente con la componente H, posteriormente recortamos una vecindad en cada imagen de cada uno de los pares de puntos que son candidatos a ser correspondencia.</p>
 <p align="justify">Primeramente probamos a usar MSE, con diferentes tamaños de parche a buscar, con esto obtuvimos unos resultados decentes, pero que tenían algunos errores.</p>
 <p align="justify">Posteriormente, usamos la función de openCV "matchTemplate". A esta función se le pasan los dos recortes de nuestras dos imágenes y mediante el método "cv2.TM_CCORR_NORMED" nos devuelve como son de parecidos nuestros dos recortes. Siendo 1 el valor en el caso de que sean idénticos y 0 el valor para cuando no se parecen nada. Usando este método, obtuvimos unos resultados mejores. Nos quedaremos únicamente con las correspondencias que tengan un alto nivel de parecido, en nuestro caso, tras varias pruebas, establecimos este umbral en un 0.93</p>
@@ -69,6 +70,7 @@
 <p align="center"><img src="https://raw.githubusercontent.com/sergiodomin/MOVA-Vision-Robotica-FollowLine/master/docs/src/3D_Reconstruction/full_reco.png" alt="Foto Reconstrucción" /><img src="https://raw.githubusercontent.com/sergiodomin/MOVA-Vision-Robotica-FollowLine/master/docs/src/3D_Reconstruction/full_reco_close.png" alt="Foto Reconstrucción de Cerca" />
 <img src="https://raw.githubusercontent.com/sergiodomin/MOVA-Vision-Robotica-FollowLine/master/docs/src/3D_Reconstruction/full_reco_lateral.png" alt="Foto Reconstrucción Lateral" /></p>
 <figcaption align="center">Muestra de varias vistas de una reconstrucción</figcaption>
+<hr />
 
 <p><strong>Vídeo</strong></p>
 <p><img src="https://github.com/sergiodomin/MOVA-Vision-Robotica-FollowLine/blob/master/docs/src/3D_Reconstruction/3D_v2.gif?raw=true" alt="Vídeo reconstrucción completa" /></p>
