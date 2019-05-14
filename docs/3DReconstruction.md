@@ -88,4 +88,5 @@
 <p><strong>Conclusiones</strong></p>
 <p align="justify">En esta práctica se ha puesto a prueba el conocimiento de cómo reconstruir una imagen 3D a partir de las imágenes obtenidas de dos cámaras de un sistema canónico estéreo. Hemos evaluado la gran ventaja, en tiempo, que tiene el usar la restricción epipolar, además de las restricciones del filtrado Canny y rango de píxeles propuestas. Por otro lado también se ha investigado el cómo evaluar las correspondencias de una forma eficiente, tanto por el tipo de método a usar, tamaño de ventana y espacio de color.</p>
 <p align="justify">Con la aplicación de todo esto, se ha obtenido una reconstrucción bastante completa de la escena (11.679 puntos dibujados) en un tiempo bastante rápido (53 segundos).</p>
+
 <p align="justify">Las franjas de puntos vacías que se aprecian en el segundo vídeo, es debido a que la plataforma se desconectaba y se volvía a conectar, y durante el tiempo de desconexión no pintaba dichos puntos. Respecto a la diferencia de tiempos entre los vídeos pensamos que también es debido al estado, en ese momento, de la plataforma.</p>
