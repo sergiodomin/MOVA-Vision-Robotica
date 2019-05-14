@@ -67,18 +67,20 @@
 <p align="justify">Por último mostramos unas imágenes donde se ve una reconstrucción total desde diferentes ángulos y un vídeo en el que se muestra una reconstrucción completa a tiempo real, así como el tiempo empleado, número de puntos evaluados y número de puntos pintados.</p>
 <p align="justify"> Aquí podemos ver una reconstrucción hecha sin revisar cómo de separados están los rayos a la hora de hacer la triangulación 3D y haciendo las correspondencias con la componente H del espacio de color HSV</p>
 <p align="center"><img src="https://raw.githubusercontent.com/sergiodomin/MOVA-Vision-Robotica-FollowLine/master/docs/src/3D_Reconstruction/full_reco.png" alt="Foto Reconstrucción" /><img src="https://raw.githubusercontent.com/sergiodomin/MOVA-Vision-Robotica-FollowLine/master/docs/src/3D_Reconstruction/full_reco_close.png" alt="Foto Reconstrucción de Cerca" />
-<img src="https://raw.githubusercontent.com/sergiodomin/MOVA-Vision-Robotica-FollowLine/master/docs/src/3D_Reconstruction/full_reco_lateral.png" alt="Foto Reconstrucción Lateral" /></p>
-<figcaption align="center">Muestra de varias vistas de una reconstrucción</figcaption>
+<img src="https://raw.githubusercontent.com/sergiodomin/MOVA-Vision-Robotica-FollowLine/master/docs/src/3D_Reconstruction/full_reco_lateral.png" alt="Foto Reconstrucción Lateral" />
+<figcaption align="center">Muestra de varias vistas de una reconstrucción</figcaption></p>
+</hr>
 <p align="justify"> Y aquí, revisando la distancia de estos puntos y usando RGB, podemos apreciar como se ven los planos más definidos y somos capaces de representar más puntos válidos</p>
 <p align="center"><img src="https://raw.githubusercontent.com/sergiodomin/MOVA-Vision-Robotica-FollowLine/master/docs/src/3D_Reconstruction/full_reco_2.png" alt="Foto Reconstrucción Cerca 2" />
-<img src="https://raw.githubusercontent.com/sergiodomin/MOVA-Vision-Robotica-FollowLine/master/docs/src/3D_Reconstruction/full_reco_lateral.png" alt="Foto Reconstrucción Lateral 2" /></p>
-<figcaption align="center">Muestra de varias vistas de una reconstrucción</figcaption>
+<img src="https://raw.githubusercontent.com/sergiodomin/MOVA-Vision-Robotica-FollowLine/master/docs/src/3D_Reconstruction/full_reco_lateral_2.png" alt="Foto Reconstrucción Lateral 2" />
+<figcaption align="center">Muestra de varias vistas de una reconstrucción</figcaption></p>
 <hr />
 
 <p><strong>Vídeo</strong></p>
 <p> Al igual que con las fotos, mostramos la diferencia a la hora de reconstruir. El primer vídeo podemos ver la reconstrucción sin tener en cuenta la separación entre los rayos y en el segundo vídeo teniendo en cuenta dicha separación</p>
 
 <p><img src="https://github.com/sergiodomin/MOVA-Vision-Robotica-FollowLine/blob/master/docs/src/3D_Reconstruction/3D_v2.gif?raw=true" alt="Vídeo reconstrucción completa" /></p>
+<hr />
 <p><img src="https://github.com/sergiodomin/MOVA-Vision-Robotica-FollowLine/blob/master/docs/src/3D_Reconstruction/3D_v3.gif?raw=true" alt="Vídeo reconstrucción completa distancia" /></p>
 
 <p> En el sigiente enlace <a href="https://github.com/sergiodomin/MOVA-Vision-Robotica-FollowLine/blob/master/docs/src/3D_Reconstruction?raw=true"> GIF 3D Reconstruction</a> se puede descargar el vídeo para verlo en grande.
