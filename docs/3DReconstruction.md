@@ -69,7 +69,7 @@
 <p align="center"><img src="https://raw.githubusercontent.com/sergiodomin/MOVA-Vision-Robotica-FollowLine/master/docs/src/3D_Reconstruction/full_reco.png" alt="Foto Reconstrucción" /><img src="https://raw.githubusercontent.com/sergiodomin/MOVA-Vision-Robotica-FollowLine/master/docs/src/3D_Reconstruction/full_reco_close.png" alt="Foto Reconstrucción de Cerca" />
 <img src="https://raw.githubusercontent.com/sergiodomin/MOVA-Vision-Robotica-FollowLine/master/docs/src/3D_Reconstruction/full_reco_lateral.png" alt="Foto Reconstrucción Lateral" />
 <figcaption align="center">Muestra de varias vistas de una reconstrucción</figcaption></p>
-</hr>
+<hr />
 <p align="justify"> Y aquí, revisando la distancia de estos puntos y usando RGB, podemos apreciar como se ven los planos más definidos y somos capaces de representar más puntos válidos</p>
 <p align="center"><img src="https://raw.githubusercontent.com/sergiodomin/MOVA-Vision-Robotica-FollowLine/master/docs/src/3D_Reconstruction/full_reco_2.png" alt="Foto Reconstrucción Cerca 2" />
 <img src="https://raw.githubusercontent.com/sergiodomin/MOVA-Vision-Robotica-FollowLine/master/docs/src/3D_Reconstruction/full_reco_lateral_2.png" alt="Foto Reconstrucción Lateral 2" />
